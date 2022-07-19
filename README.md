@@ -2,6 +2,8 @@
 
 An Educational Proof Assistant for learning Natural Deduction.
 
+![Finished problem](readme_images/finished-problem.png)
+
 ## Install the dependencies
 ```bash
 npm install
@@ -27,7 +29,3 @@ quasar build
 
 ### Customize the configuration
 See [Configuring quasar.conf.js](https://v2.quasar.dev/quasar-cli/quasar-conf-js).
-
-## Proving an Argument
-
-![Problem Browser](readme_images/problem-browser.png | width=100)
