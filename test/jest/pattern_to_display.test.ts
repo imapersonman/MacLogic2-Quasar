@@ -1,7 +1,7 @@
 import { app, con, mv, ov, ovlist } from 'coastline/src/lambda_pi/shorthands'
 import { Ast } from 'coastline/src/lambda_pi/ast'
-import { pattern_to_display } from './pattern_to_display'
-import { and, exists, forall, ml } from './maclogic_shorthands'
+import { pattern_to_display } from '../../src/components/MacLogicConstructor/pattern_to_display'
+import { and, exists, forall, ml } from '../../src/components/MacLogicConstructor/maclogic_shorthands'
 
 const [F, G] = [(x: Ast): Ast => app(ov('F'), x), (x: Ast): Ast => app(ov('G'), x)]
 const [x, y] = ovlist('x', 'y')

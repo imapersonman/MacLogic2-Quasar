@@ -1,7 +1,7 @@
 import { test_partial_generator_expectation } from 'coastline/tests/generators/check_generator'
 import { Input, run_interaction } from 'coastline/src/interaction/interaction';
-import { TacticId } from './construction_interaction';
-import { initial_browser, mk_browser_interaction, non_existent_entry_message, ProblemDescription, ProblemDirectory, ProblemEntry } from './problem_browser';
+import { TacticId } from '../../src/components/MacLogicConstructor/construction_interaction';
+import { initial_browser, mk_browser_interaction, non_existent_entry_message, ProblemDescription, ProblemDirectory, ProblemEntry } from '../../src/components/MacLogicConstructor/problem_browser';
 
 const problem_directory = (name: string, entries: ProblemEntry[]): ProblemDirectory => ({
     type: 'ProblemDirectory',

@@ -1,12 +1,12 @@
 import { mk_map } from 'coastline/src/map/RecursiveMap';
 import { Sequent, sequent } from 'coastline/src/construction/sequent';
-import { absurd, and, exists, forall, i, iff, imp, ml, not, o, pred } from './maclogic_shorthands';
+import { absurd, and, exists, forall, i, iff, imp, ml, not, o, pred } from '../../src/components/MacLogicConstructor/maclogic_shorthands';
 import { app, iv, la, ov, ovlist } from 'coastline/src/lambda_pi/shorthands';
-import { interaction, MacLogicResponse, TacticId } from './construction_interaction';
-import { InteractionController } from './interaction_controller';
+import { interaction, MacLogicResponse, TacticId } from '../../src/components/MacLogicConstructor/construction_interaction';
+import { InteractionController } from '../../src/components/MacLogicConstructor/interaction_controller';
 import { Ast } from 'coastline/src/lambda_pi/ast';
 import { defined } from 'coastline/src/utilities';
-import { proven_sequent } from './proven_sequent';
+import { proven_sequent } from '../../src/components/MacLogicConstructor/proven_sequent';
 
 const [A, B, C, R, T, x, a, b] = ovlist('A', 'B', 'C', 'R', 'T', 'x', 'a', 'b')
 const [q, w, y, z] = ovlist('q', 'w', 'y', 'z')

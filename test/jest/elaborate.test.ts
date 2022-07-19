@@ -1,14 +1,14 @@
-import { absurd, and, exists, forall, i, iff, imp, ml, not, o, or, pred } from './maclogic_shorthands'
+import { absurd, and, exists, forall, i, iff, imp, ml, not, o, or, pred } from '../../src/components/MacLogicConstructor/maclogic_shorthands'
 import { app, flapp, imv, mv, ovlist } from 'coastline/src/lambda_pi/shorthands'
 import { Ast, Variable } from 'coastline/src/lambda_pi/ast'
 import { RedeclaredVariable } from 'coastline/src/logical_framework/sort_errors'
-import { elaborate_s, elaborate_sequent, unelaborate, unelaborate_sequent, unelaborate_sub_problem } from './elaborate'
+import { elaborate_s, elaborate_sequent, unelaborate, unelaborate_sequent, unelaborate_sub_problem } from '../../src/components/MacLogicConstructor/elaborate'
 import { mk_map } from 'coastline/src/map/RecursiveMap'
 import { sequent } from 'coastline/src/construction/sequent'
-import { ErrorInAssumptions, ErrorInConclusion } from './sequent_error'
+import { ErrorInAssumptions, ErrorInConclusion } from '../../src/components/MacLogicConstructor/sequent_error'
 import { sub_problem } from 'coastline/src/construction/check_proof_insert'
 import { IncompatibleCtxs } from 'app/../coastline/src/logical_framework/ctx_union'
-import { proven_sequent } from './proven_sequent'
+import { proven_sequent } from '../../src/components/MacLogicConstructor/proven_sequent'
 
 const [A, Z, P, x, y, z, R, B, C, D, F, w, a, G] = ovlist('A', 'Z', 'P', 'x', 'y', 'z', 'R', 'B', 'C', 'D', 'F', 'w', 'a', 'G')
 

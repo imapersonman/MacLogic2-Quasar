@@ -1,8 +1,8 @@
 import Pa from 'parsimmon'
 import { app, flapp, ov, ovlist } from 'coastline/src/lambda_pi/shorthands'
 import { Ast, Variable } from 'coastline/src/lambda_pi/ast'
-import { absurd, and, exists, forall, iff, imp, not, or } from './maclogic_shorthands'
-import { is_parse_failure } from './maclogic_parser'
+import { absurd, and, exists, forall, iff, imp, not, or } from '../../src/components/MacLogicConstructor/maclogic_shorthands'
+import { is_parse_failure } from '../../src/components/MacLogicConstructor/maclogic_parser'
 import { first, is_empty, rest } from 'coastline/src/utilities'
 
 // This file is unfinished, so this parser should not be used.

@@ -2,11 +2,11 @@ import { try_parse } from 'coastline/src/lambda_pi/parsers/parser'
 import { Ast } from 'coastline/src/lambda_pi/ast'
 import { ovlist, iovlist, la, flapp, app, ov, iv, con } from 'coastline/src/lambda_pi/shorthands'
 import { and, andel, ander, andi, exists, existse, existsi, forall, foralle, foralli, i, imp, impe, impi, ml, not, o, pred } from 'coastline/src/maclogic/maclogic_shorthands'
-import { S } from './s'
-import { try_parse_then_elaborate_sequent, unelaborate_then_unparse } from './parse_then_elaborate'
-import { ast_to_proof, display_proof } from './linear_proof2'
-import { assert_linear_proof_is_valid } from './assert_linear_proof_is_valid'
-import { make_qs_phi } from './construction_interaction'
+import { S } from '../../src/components/MacLogicConstructor/s'
+import { try_parse_then_elaborate_sequent, unelaborate_then_unparse } from '../../src/components/MacLogicConstructor/parse_then_elaborate'
+import { ast_to_proof, display_proof } from '../../src/components/MacLogicConstructor/linear_proof2'
+import { assert_linear_proof_is_valid } from '../../src/components/MacLogicConstructor/assert_linear_proof_is_valid'
+import { make_qs_phi } from '../../src/components/MacLogicConstructor/construction_interaction'
 
 const [A, B, C, R, S, T, Fv, Gv, x, y, a, b] = ovlist('A', 'B', 'C', 'R', 'S', 'T', 'F', 'G', 'x', 'y', 'a', 'b')
 const [u1, u2, u3, u4, u5] = iovlist(1, 2, 3, 4, 5)

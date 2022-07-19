@@ -1,6 +1,6 @@
 import { ovlist } from 'coastline/src/lambda_pi/shorthands';
-import { and, not, or } from './maclogic_shorthands';
-import { instantiate_rule } from './instantiate_rule';
+import { and, not, or } from '../../src/components/MacLogicConstructor/maclogic_shorthands';
+import { instantiate_rule } from '../../src/components/MacLogicConstructor/instantiate_rule';
 
 describe('instantiate_rule', () => {
     const [A, B, C, D] = ovlist('A', 'B', 'C', 'D')

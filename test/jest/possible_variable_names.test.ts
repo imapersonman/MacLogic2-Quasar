@@ -1,6 +1,6 @@
 import { mk_map } from 'coastline/src/map/RecursiveMap';
-import { i, o } from './maclogic_shorthands';
-import { all_possible_variable_names, filled_in_possible_variable_names, possible_names_minus, possible_unused_variable_names } from './possible_variable_names';
+import { i, o } from '../../src/components/MacLogicConstructor/maclogic_shorthands';
+import { all_possible_variable_names, filled_in_possible_variable_names, possible_names_minus, possible_unused_variable_names } from '../../src/components/MacLogicConstructor/possible_variable_names';
 
 test('empty ctx returns everything', () => expect(possible_unused_variable_names(mk_map())).toEqual(all_possible_variable_names))
 test('non-empty ctx without individuals returns everything', () => expect(possible_unused_variable_names(mk_map(['a', o], ['b', o], ['c', o]))).toEqual(all_possible_variable_names))

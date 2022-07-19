@@ -1,7 +1,7 @@
 import { app, ovlist } from 'coastline/src/lambda_pi/shorthands'
-import { and, forall, } from './maclogic_shorthands'
-import { MacLogicIIInputerParser } from './interfaces/maclogic_ii_input_parser'
-import { parse_prop } from './parse_prop'
+import { and, forall, } from '../../src/components/MacLogicConstructor/maclogic_shorthands'
+import { MacLogicIIInputerParser } from '../../src/components/MacLogicConstructor/interfaces/maclogic_ii_input_parser'
+import { parse_prop } from '../../src/components/MacLogicConstructor/parse_prop'
 
 const [A, B, F, x, y, b] = ovlist('A', 'B', 'F', 'x', 'y', 'b')
 

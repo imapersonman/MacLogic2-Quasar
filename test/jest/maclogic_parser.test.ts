@@ -1,7 +1,7 @@
 import { app, flapp, ov, ovlist } from 'coastline/src/lambda_pi/shorthands'
 import { Ast, Variable } from 'coastline/src/lambda_pi/ast'
-import { absurd, and, exists, forall, iff, imp, not, or } from './maclogic_shorthands'
-import { is_parse_failure, parse } from './maclogic_parser'
+import { absurd, and, exists, forall, iff, imp, not, or } from '../../src/components/MacLogicConstructor/maclogic_shorthands'
+import { is_parse_failure, parse } from '../../src/components/MacLogicConstructor/maclogic_parser'
 
 const [A, B, C, D, E, F, G, J, P, R, X, Y, Z, a, b, c, d, g, h, k, o, s, x, y, z] = ovlist('A', 'B', 'C', 'D', 'E', 'F', 'G', 'J', 'P', 'R', 'X', 'Y', 'Z', 'a', 'b', 'c', 'd', 'g', 'h', 'k', 'o', 's', 'x', 'y', 'z')
 

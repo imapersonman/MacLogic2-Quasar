@@ -2,9 +2,9 @@ import { Ast, Variable } from 'coastline/src/lambda_pi/ast'
 import { FailedCheck, RedeclaredVariable, UndeclaredConstant } from 'coastline/src/logical_framework/sort_errors'
 import { app, con, flapp, la, ovlist, pi } from 'coastline/src/lambda_pi/shorthands'
 import { mk_map } from 'coastline/src/map/RecursiveMap'
-import { absurd, and, exists, forall, i, iff, ifun, imp, ml, not, o, or, pred } from './maclogic_shorthands'
-import { display_maclogic_elaboration_output, elaborate_maclogic_ast, vacuous_bind } from './elaborate_maclogic_ast'
-import { display_proven_sequent, proven_sequent } from './proven_sequent'
+import { absurd, and, exists, forall, i, iff, ifun, imp, ml, not, o, or, pred } from '../../src/components/MacLogicConstructor/maclogic_shorthands'
+import { display_maclogic_elaboration_output, elaborate_maclogic_ast, vacuous_bind } from '../../src/components/MacLogicConstructor/elaborate_maclogic_ast'
+import { display_proven_sequent, proven_sequent } from '../../src/components/MacLogicConstructor/proven_sequent'
 
 const [A, Z, P, x, y, z, R, B, C, D, F, w, a, b, c] = ovlist('A', 'Z', 'P', 'x', 'y', 'z', 'R', 'B', 'C', 'D', 'F', 'w', 'a', 'b', 'c')
 

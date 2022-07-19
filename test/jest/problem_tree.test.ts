@@ -2,8 +2,8 @@ import { Sequent, sequent } from 'coastline/src/construction/sequent';
 import { Ast } from 'coastline/src/lambda_pi/ast';
 import { mk_map } from 'coastline/src/map/RecursiveMap';
 import { app, iv, ov, ovlist } from 'coastline/src/lambda_pi/shorthands';
-import { and, exists, forall, imp, ml } from './maclogic_shorthands';
-import { split_problem, open_problem, closed_problem, current_problem, ProblemTree, select_and_modify_problem_tree } from './problem_tree';
+import { and, exists, forall, imp, ml } from '../../src/components/MacLogicConstructor/maclogic_shorthands';
+import { split_problem, open_problem, closed_problem, current_problem, ProblemTree, select_and_modify_problem_tree } from '../../src/components/MacLogicConstructor/problem_tree';
 
 const [A, B, C, R, S, T, x, y, a, b] = ovlist('A', 'B', 'C', 'R', 'S', 'T', 'x', 'y', 'a', 'b')
 

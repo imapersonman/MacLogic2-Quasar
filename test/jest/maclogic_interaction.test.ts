@@ -3,24 +3,24 @@
 import { app, con, flapp, imv, iovlist, iv, la, mvlist, ov, ovlist, pi, type_k } from 'coastline/src/lambda_pi/shorthands';
 import { sub_problem } from 'coastline/src/construction/check_proof_insert';
 import { sequent } from 'coastline/src/construction/sequent';
-import { try_parse_then_elaborate_sequent } from './parse_then_elaborate';
+import { try_parse_then_elaborate_sequent } from '../../src/components/MacLogicConstructor/parse_then_elaborate';
 import { unifying_assumption } from 'coastline/src/construction/unifying_assumptions';
 import { test_partial_generator_expectation, test_generator_expectation } from 'coastline/tests/generators/check_generator'
-import { absurd, and, andel, ander, andi, exists, existse, existsi, forall, foralle, foralli, i, iff, imp, impe, impi, ml, not, o, or, ore, pred } from './maclogic_shorthands';
+import { absurd, and, andel, ander, andi, exists, existse, existsi, forall, foralle, foralli, i, iff, imp, impe, impi, ml, not, o, or, ore, pred } from '../../src/components/MacLogicConstructor/maclogic_shorthands';
 import { Ast, Variable } from 'coastline/src/lambda_pi/ast';
-import { AssumptionHidingProofInsert, HideAssumption, hide_assumptions_in_problems, InsertProof } from './assumption_hiding_proof_insert';
+import { AssumptionHidingProofInsert, HideAssumption, hide_assumptions_in_problems, InsertProof } from '../../src/components/MacLogicConstructor/assumption_hiding_proof_insert';
 import { mk_map } from 'coastline/src/map/RecursiveMap';
 import { run_interaction, Input } from 'coastline/src/interaction/interaction'
-import { display_maclogic_state, interaction, is_individual_or_predicate_type, proven_sequent_substitution_to_ctx_and_substitution, separate_propositions_assumptions_and_conclusion, separate_sequent_from_individuals_and_predicates, SequentOrTheoremId, sequent_or_theorem_to_proof_insert, sig } from './construction_interaction';
-import { fill_in_problem_with_parent } from './fill_in_problem_with_parent';
+import { display_maclogic_state, interaction, is_individual_or_predicate_type, proven_sequent_substitution_to_ctx_and_substitution, separate_propositions_assumptions_and_conclusion, separate_sequent_from_individuals_and_predicates, SequentOrTheoremId, sequent_or_theorem_to_proof_insert, sig } from '../../src/components/MacLogicConstructor/construction_interaction';
+import { fill_in_problem_with_parent } from '../../src/components/MacLogicConstructor/fill_in_problem_with_parent';
 import { and_association_1, and_association_2, and_association_3, and_association_4, and_association_5, exists_and_exists_conjunct_1, exists_and_exists_conjunct_2, exists_and_exists_conjunct_3, exists_and_exists_conjunct_4, forall_pullout_1, forall_pullout_2, forall_pullout_3, forall_pullout_4, forall_pullout_5, forall_pullout_6, forall_pullout_7, implication_collapse_1, implication_collapse_2, implication_collapse_3, implication_collapse_4, pt_seq } from './problem_tree.test';
-import { closed_problem, current_problem, open_problem, split_problem } from './problem_tree';
-import { possible_names_minus } from './possible_variable_names';
+import { closed_problem, current_problem, open_problem, split_problem } from '../../src/components/MacLogicConstructor/problem_tree';
+import { possible_names_minus } from '../../src/components/MacLogicConstructor/possible_variable_names';
 import { check_sig } from 'coastline/src/logical_framework/synthesize_type';
 import { Ctx } from 'coastline/src/logical_framework/ctx';
 import { Substitution } from 'coastline/src/unification/first_order';
 import { individuali } from 'coastline/src/maclogic/maclogic_shorthands';
-import { proven_sequent } from './proven_sequent';
+import { proven_sequent } from '../../src/components/MacLogicConstructor/proven_sequent';
 
 const tptes = (assumptions: string, conclusion: string) => try_parse_then_elaborate_sequent(assumptions, conclusion)
 const separated_tptes = (assumptions: string, conclusion: string) => separate_sequent_from_individuals_and_predicates(try_parse_then_elaborate_sequent(assumptions, conclusion))[1]

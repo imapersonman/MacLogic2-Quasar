@@ -1,4 +1,4 @@
-import { is_parse_failure, parse, parse_sequent, unparse, unparse_sequent } from './parser'
+import { is_parse_failure, parse, parse_sequent, unparse, unparse_sequent } from '../../src/components/MacLogicConstructor/parser'
 
 describe('parse', () => {
     // Individual
