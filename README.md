@@ -30,4 +30,4 @@ See [Configuring quasar.conf.js](https://v2.quasar.dev/quasar-cli/quasar-conf-js
 
 ## Proving an Argument
 
-![Problem Browser](https://github.com/imapersonman/MacLogic2-Quasar/blob/main/problem-browser.png?raw=true)
+![Problem Browser](readme_images/problem-browser.png | width=100)
