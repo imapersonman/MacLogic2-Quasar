@@ -7,6 +7,14 @@ An Educational Proof Assistant for learning Natural Deduction.
 npm install
 ```
 
+### Add [Coastline](https://github.com/imapersonman/coastline) as a local dependency
+
+```bash
+cd ../path/to/place/coastline
+git clone https://github.com/imapersonman/coastline.git
+npm install --save ../path/to/place/coastline
+```
+
 ### Start the app in development mode (hot-code reloading, error reporting, etc.)
 ```bash
 quasar dev
