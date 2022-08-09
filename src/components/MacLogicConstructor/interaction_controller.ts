@@ -14,7 +14,6 @@ export class InteractionController<State, UserInput> {
     step(input: UserInput): State {
         this.it = this.generator.next(Input(input))
         this.state = this.it.value
-        // console.log(this.state)
         return this.state
     }
 
