@@ -1,6 +1,6 @@
 # MacLogic II
 
-An Educational Proof Assistant for learning Natural Deduction, current hosted [here](fitelson.org/ml2).
+An Educational Proof Assistant for learning Natural Deduction, currently hosted [here](fitelson.org/ml2).
 
 This software is based on [MacLogic](http://fitelson.org/maclogic.htm).
 
