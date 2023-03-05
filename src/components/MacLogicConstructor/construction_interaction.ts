@@ -692,15 +692,17 @@ export const run_tactic = (state: MacLogicState, tactic: TacticId, assumptions: 
         )(state)
     }
     if (tactic === 'note') {
-        return ask_for_unifying_assumption(
-            ml(not(X)),
-            ({ unifier: u, variable: a }) => InsertProof([ml(u('X')), HideAssumption(conclusion, [a])], (m, v) => app(la(v(0), ml(absurd), m(1)), note(u('X'), a, m(0))))
+        return ask_for_unifying_assumption(ml(not(X)), ({ unifier: u, variable: a }) =>
+            InsertProof(
+                [ml(u('X')), HideAssumption(conclusion, [a])],
+                (m, v) => app(la(v(0), ml(absurd), m(1)), note(u('X'), a, m(0))))
         )(state)
     }
     if (tactic === 'dn') {
-        return ask_for_unifying_conclusion(
-            ml(X),
-            (u) => InsertProof([ml(not(not(u('X'))))], (m) => dn(u('X'), m(0)))
+        return ask_for_unifying_conclusion(ml(X), (u) =>
+            InsertProof(
+                [ml(not(not(u('X'))))],
+                (m) => dn(u('X'), m(0)))
         )(state)
     }
     if (tactic === 'oril') {

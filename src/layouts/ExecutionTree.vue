@@ -199,12 +199,12 @@ const roots = [
   // ExecutionTree.root_from_control(operator_app(ecc_static_distance_def, [obj('ECCSDContext', []), req2(...ecc_term_types)]))
   // ...ecc_examples.map((example) => ExecutionTree.root_from_control(operator_app(ecc_static_distance_def, [obj('ECCSDContext', []), example])))
   // ExecutionTree.root_from_control(ecc_term_options())
-  // ExecutionTree.root_from_control(operator_app(fib_def, [obj('Natural_Number', 0)])),
-  // ExecutionTree.root_from_control(operator_app(fib_def, [obj('Natural_Number', 1)])),
-  // ExecutionTree.root_from_control(operator_app(fib_def, [obj('Natural_Number', 2)])),
-  // ExecutionTree.root_from_control(operator_app(fib_def, [obj('Natural_Number', 3)])),
-  // ExecutionTree.root_from_control(operator_app(fib_def, [obj('Natural_Number', 8)])),
-  // ExecutionTree.root_from_control(operator_app(fib_def, [obj('Natural_Number', 10)])),
+  ExecutionTree.root_from_control(operator_app(fib_def, [obj('Natural_Number', 0)])),
+  ExecutionTree.root_from_control(operator_app(fib_def, [obj('Natural_Number', 1)])),
+  ExecutionTree.root_from_control(operator_app(fib_def, [obj('Natural_Number', 2)])),
+  ExecutionTree.root_from_control(operator_app(fib_def, [obj('Natural_Number', 3)])),
+  ExecutionTree.root_from_control(operator_app(fib_def, [obj('Natural_Number', 8)])),
+  ExecutionTree.root_from_control(operator_app(fib_def, [obj('Natural_Number', 10)])),
   // ExecutionTree.root_from_control(
   //   operator_app(apply_substitution_def_2, [
   //       substitution([va_('x'), atm('a')], [va_('y'), atm('b')], [va_('z'), atm('c')]),
